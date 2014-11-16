@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_grey">
+
+        <TextView
+            android:id="@+id/person_sending_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:focusable="false"
+            android:textSize="20dp"
+            android:text="Peter"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:inputType="time"
+            android:id="@+id/time"
+            android:text="Sep 10th 8:30am"
+            android:layout_alignParentRight="true"
+            android:focusable="false"
+            android:textColor="@color/white"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/message_content"
+            android:layout_below="@+id/person_sending_to"
+            android:layout_marginTop="0dp"
+            android:textColor="@color/white"
+            android:focusable="false"
+            android:text="i am gonna be late"
+            android:layout_alignBottom="@+id/delete_button"
+            android:layout_toLeftOf="@+id/delete_button"
+            android:layout_toStartOf="@+id/delete_button"
+            android:layout_alignLeft="@+id/person_sending_to"
+            android:layout_alignStart="@+id/person_sending_to" />
+
+    <Button
+        android:id="@+id/delete_button"
+        android:text="@string/remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time"
+        android:layout_alignRight="@+id/time"
+        android:layout_alignEnd="@+id/time"
+        android:focusable="false"
+        android:textColor="@color/white"
+        android:background="@drawable/button_custom"/>
+
+</RelativeLayout>

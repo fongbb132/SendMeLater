@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_grey">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_contact"
+        android:id="@+id/chooseContact"
+        android:layout_marginTop="37dp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_custom_longer"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alarm_checkbox"
+        android:enabled="true"
+        android:shadowColor="@color/white"
+        android:text="@string/add_alarm"
+        android:textColor="@color/white"
+        android:layout_below="@+id/chooseContact"
+        android:layout_toRightOf="@+id/linearLayout"
+        android:layout_toEndOf="@+id/linearLayout"
+        android:focusable="false"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send_you_message_after"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:id="@+id/sendmessageafter"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/alarm_checkbox"
+        android:layout_toRightOf="@+id/linearLayout"
+        android:layout_toEndOf="@+id/linearLayout" />
+
+    <TextView
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_message"
+        android:layout_marginTop="31dp"
+        android:textSize="20dp"
+        android:id="@+id/textView"
+        android:layout_below="@+id/alarm_checkbox"
+        android:layout_alignLeft="@+id/message_field"
+        android:layout_alignStart="@+id/message_field" />
+
+    <EditText
+        android:id="@+id/message_field"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_message"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/white"
+        android:singleLine="false"
+        android:lines="2"/>
+
+    <Button
+        android:id="@+id/sendIt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send_it"
+        android:layout_below="@+id/message_field"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="131dp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_custom"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:background="@color/dark_grey"
+        android:text="@string/contact"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:id="@+id/textView2" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <Button
+            android:id="@+id/Date"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/white"
+            android:background="@drawable/button_custom_long"/>
+        <Button
+            android:id="@+id/Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="@color/white"
+            android:background="@drawable/button_custom_long"/>
+        </LinearLayout>
+
+    <TextView
+        android:textSize="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/set_time"
+        android:layout_weight="1"
+        android:layout_below="@+id/message_field"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:id="@+id/textView4" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_ringtone_button"
+        android:id="@+id/choose_ringtone_button"
+        android:layout_toEndOf="@+id/sendmessageafter"
+        android:textColor="@color/white"
+        android:background="@drawable/button_custom"
+        android:layout_alignBottom="@+id/sendmessageafter"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/sendIt"
+        android:layout_alignStart="@+id/sendIt"
+        android:layout_alignTop="@+id/alarm_checkbox" />
+
+
+</RelativeLayout>
